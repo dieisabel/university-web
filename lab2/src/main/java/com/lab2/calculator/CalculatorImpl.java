@@ -1,6 +1,6 @@
-package com.lab2;
+package com.lab2.calculator;
 
-public class TabulationService {
+public class CalculatorImpl implements Calculator {
     public double calculateFunction(double x, double a, double eps) {
         if (x < 1.7 - eps) {
             return Math.PI * Math.pow(x, 2) - 7 / Math.pow(x, 2);
@@ -32,7 +32,7 @@ public class TabulationService {
         }
         return array;
     }
-    
+
     public int min(double[] array) {
         double minElement = array[0];
         int minIndex = 0;
@@ -44,16 +44,28 @@ public class TabulationService {
         }
         return minIndex;
     }
-    
+
     public int max(double[] array) {
-        double minElement = array[0];
-        int minIndex = 0;
+        double maxElement = array[0];
+        int maxIndex = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] < minElement) {
-                minElement = array[i];
-                minIndex = i;
+            if (array[i] > maxElement) {
+                maxElement = array[i];
+                maxIndex = i;
             }
         }
-        return minIndex;
+        return maxIndex;
+    }
+
+    public double sum(double[] array) {
+        double sum = 0.0;
+        for (double value : array) {
+          sum += value;
+        }
+        return sum;
+    }
+
+    public double mean(double[] array) {
+        return sum(array) / array.length;
     }
 }

@@ -13,9 +13,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class HelloServletTest {
+public class MainServletTest {
     
-    public HelloServletTest() {
+    public MainServletTest() {
     }
     
     @BeforeClass
@@ -42,7 +42,7 @@ public class HelloServletTest {
         System.out.println("processRequest");
         HttpServletRequest request = null;
         HttpServletResponse response = null;
-        HelloServlet instance = new HelloServlet();
+        MainServlet instance = new MainServlet();
         instance.processRequest(request, response);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -56,7 +56,7 @@ public class HelloServletTest {
         System.out.println("doGet");
         HttpServletRequest request = null;
         HttpServletResponse response = null;
-        HelloServlet instance = new HelloServlet();
+        MainServlet instance = new MainServlet();
         instance.doGet(request, response);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -70,7 +70,7 @@ public class HelloServletTest {
         System.out.println("doPost");
         HttpServletRequest request = null;
         HttpServletResponse response = null;
-        HelloServlet instance = new HelloServlet();
+        MainServlet instance = new MainServlet();
         instance.doPost(request, response);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -82,7 +82,7 @@ public class HelloServletTest {
     @Test
     public void testGetServletInfo() {
         System.out.println("getServletInfo");
-        HelloServlet instance = new HelloServlet();
+        MainServlet instance = new MainServlet();
         String expResult = "";
         String result = instance.getServletInfo();
         assertEquals(expResult, result);
