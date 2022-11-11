@@ -15,6 +15,7 @@ public class MainServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        // TODO: What if the size of an array will be zero?
         double start = Double.parseDouble(request.getParameter("start"));
         double end = Double.parseDouble(request.getParameter("end"));
         double step = Double.parseDouble(request.getParameter("step"));
