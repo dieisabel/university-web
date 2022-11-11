@@ -10,6 +10,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>MainServlet</servlet-name>
-        <url-pattern>/main</url-pattern>
+        <url-pattern>/tabulate</url-pattern>
     </servlet-mapping>
 </web-app>
