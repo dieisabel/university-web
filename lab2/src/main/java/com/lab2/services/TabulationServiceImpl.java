@@ -8,7 +8,7 @@ import com.lab2.Config;
 import com.lab2.dtos.TabulationInput;
 
 import java.util.ArrayList;
-import java.util.List;;
+import java.util.List;
 
 public class TabulationServiceImpl implements TabulationService {
     private final Calculator calculator;
@@ -41,10 +41,8 @@ public class TabulationServiceImpl implements TabulationService {
 
     private List<Pair> convertArraysToPairs(double[] xArray, double[] yArray) {
         List<Pair> result = new ArrayList<>();
-        for (double x : xArray) {
-            for (double y : yArray) {
-                result.add(new Pair(x, y));
-            }
+        for (int i = 0; i < xArray.length; i++) {
+            result.add(new Pair(xArray[i], yArray[i]));
         }
         return result;
     }
