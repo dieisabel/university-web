@@ -20,15 +20,19 @@ indent_mode=2
 [project]
 name=lab3
 base_path=/home/kostiantyn/projects/university/web/lab3
+description=
 
 [long line marker]
 long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=1
-FILE_NAME_0=433;XML;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fpom.xml;0;4
-FILE_NAME_1=228;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FMainServlet.java;0;4
+current_page=3
+FILE_NAME_0=17;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FMainServlet.java;0;4
+FILE_NAME_1=129;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FMain.java;0;4
+FILE_NAME_2=227;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FPlant.java;0;4
+FILE_NAME_3=2261;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FPlantDAO.java;0;4
+FILE_NAME_4=225;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FDatabase.java;0;4
 
 [VTE]
 last_dir=/home/kostiantyn
