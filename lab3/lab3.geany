@@ -27,12 +27,22 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=3
-FILE_NAME_0=17;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FMainServlet.java;0;4
-FILE_NAME_1=129;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FMain.java;0;4
-FILE_NAME_2=227;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FPlant.java;0;4
-FILE_NAME_3=2261;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FPlantDAO.java;0;4
-FILE_NAME_4=225;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FDatabase.java;0;4
+current_page=4
+FILE_NAME_0=16;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FMainServlet.java;0;4
+FILE_NAME_1=350;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FMain.java;0;4
+FILE_NAME_2=335;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2Fdomain%2Fdaos%2FPlantFamilyDAO.java;0;4
+FILE_NAME_3=235;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2Fdomain%2Fmodels%2FPlant.java;0;4
+FILE_NAME_4=3904;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2Fdomain%2Fdaos%2FPlantDAO.java;0;4
+FILE_NAME_5=234;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2Fdatabase%2FDatabase.java;0;4
 
 [VTE]
 last_dir=/home/kostiantyn
+
+[prjorg]
+source_patterns=*.c;*.C;*.cpp;*.cxx;*.c++;*.cc;*.m;
+header_patterns=*.h;*.H;*.hpp;*.hxx;*.h++;*.hh;
+ignored_dirs_patterns=.*;CVS;
+ignored_file_patterns=*.o;*.obj;*.a;*.lib;*.so;*.dll;*.lo;*.la;*.class;*.jar;*.pyc;*.mo;*.gmo;
+generate_tag_prefs=0
+show_empty_dirs=true
+external_dirs=

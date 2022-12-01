@@ -1,4 +1,4 @@
-package com.lab3;
+package com.lab3.database;
 
 import java.sql.ResultSet;
 import java.sql.Connection;
@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.sql.DriverManager;
 import java.sql.Connection;
 
-class Database {
+public class Database {
 	private static String CONNECTION_STRING = "jdbc:mariadb://localhost:3306/lab3?user=lab3&password=123";
 
 	public static Connection createConnection() {
