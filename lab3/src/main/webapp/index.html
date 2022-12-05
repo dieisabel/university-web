@@ -3,21 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Lab3</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/app/css/styles.css">
 </head>
 <body>
-  <h1>Hello, World!</h1>
-	
-  <div class="form">
-    <form method="post" action="/app/tabulate">
-      <label for="startInput">Start: </label>
-      <input type="text" id="startInput" name="start" />
-      <label for="endInput">End: </label>
-      <input type="text" id="endInput" name="end" />
-      <label for="stepInput">Step: </label>
-      <input type="text" id="stepInput" name="step" />
-      <input type="submit" />
-    </form>
+  <div class="container">
+	<h1 class="header">Plant families</h1>
+	<div class="actions">
+	  <a href="/app/families/create">Create</a>
+	  <a href="/app/families/find">Find</a>
+	  <a href="/app/families/all">Show all</a>
+	</div>
   </div>
 </body>
 </html>

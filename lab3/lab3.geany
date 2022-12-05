@@ -27,13 +27,10 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=4
-FILE_NAME_0=16;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FMainServlet.java;0;4
-FILE_NAME_1=350;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2FMain.java;0;4
-FILE_NAME_2=335;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2Fdomain%2Fdaos%2FPlantFamilyDAO.java;0;4
-FILE_NAME_3=235;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2Fdomain%2Fmodels%2FPlant.java;0;4
-FILE_NAME_4=3904;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2Fdomain%2Fdaos%2FPlantDAO.java;0;4
-FILE_NAME_5=234;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2Fdatabase%2FDatabase.java;0;4
+current_page=0
+FILE_NAME_0=313;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2Fservlets%2FPlantServlet.java;0;4
+FILE_NAME_1=0;Java;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fjava%2Fcom%2Flab3%2Fservlets%2FPlantFamilyServlet.java;0;4
+FILE_NAME_2=0;XML;0;EUTF-8;1;1;0;%2Fhome%2Fkostiantyn%2Fprojects%2Funiversity%2Fweb%2Flab3%2Fsrc%2Fmain%2Fwebapp%2FWEB-INF%2Fweb.xml;0;4
 
 [VTE]
 last_dir=/home/kostiantyn

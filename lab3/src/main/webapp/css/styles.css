@@ -1,10 +1,61 @@
-.form input {
-  display: block;
-  margin-bottom: 5px;
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
 }
 
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 5px;
+.container {
+	width: 1000px;
+	margin: auto;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.actions {
+	width: 50%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+table {
+	text-align: left;
+	border: 2px solid black;
+	border-collapse: collapse;
+	width: 50%;
+	margin: auto;
+}
+
+thead tr, th {
+	border: 2px solid black;
+}
+
+tbody tr, td {
+	border: 2px solid black;
+}
+
+td {
+	padding: 2px;
+}
+
+form {
+	margin-bottom: 30px;
+}
+
+form input {
+	margin-bottom: 15px;
+}
+
+.submitButton {
+	display: block;
+	height: 45px;
+	width: 100px;
+}
+
+.backlink {
+	margin-top: 30px;
 }

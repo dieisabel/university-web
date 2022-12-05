@@ -52,7 +52,7 @@ public class PlantDAO {
 				"SELECT * " +
 				"FROM plants AS p " +
 				"JOIN plant_families AS f ON p.family_id = f.family_id " +
-				"WHERE name = ?"
+				"WHERE p.name = ?"
 			);
 			statement.setString(1, name);
 			result = statement.executeQuery();
@@ -70,27 +70,37 @@ public class PlantDAO {
 	}
 
 	public Optional<Plant> save(Plant plant) {
-		Optional<Plant> f = findByName(plant.getName());
-		if (f.isPresent()) {
-			return f;
+		Optional<Plant> p = findByName(plant.getName());
+		if (p.isPresent()) {
+			return p;
 		}
-		Optional<Plant> p = Optional.empty();
+		p = Optional.empty();
 		Connection connection = null;
 		PreparedStatement statement = null;
 		ResultSet result = null;
 		try {
 			connection = Database.createConnection();
 			statement = connection.prepareStatement(
-				"INSERT INTO plants(name) VALUES (?)",
+				"INSERT INTO plants(name, temperature, light, is_poisonous, size, family_id) " +
+				"VALUES (?, ?, ?, ?, ?, ?)",
 				Statement.RETURN_GENERATED_KEYS
 			);
 			statement.setString(1, plant.getName());
+			statement.setFloat(2, plant.getTemperature());
+			statement.setString(3, plant.getLight());
+			if (plant.getIsPoisonous()) {
+				statement.setString(4, "y");
+			} else {
+				statement.setString(4, "n");
+			}
+			statement.setFloat(5, plant.getSize());
+			statement.setInt(6, plant.getPlantFamily().getId());
 			statement.executeUpdate();
 			result = statement.getGeneratedKeys();
 			if (result.next()) {
-				/*
-				p = Optional.of(new Plant(result.getInt(1), plant.getName()));
-				*/
+				plant.setId(result.getInt(1));
+				// TODO: ????
+				p = Optional.of(plant);
 			}
 		} catch (SQLException exception) {
 			exception.printStackTrace();
@@ -109,11 +119,20 @@ public class PlantDAO {
 			connection = Database.createConnection();
 			statement = connection.prepareStatement(
 				"UPDATE plants " +
-				"SET name = ? "  +
+				"SET name = ?, temperature = ?, light = ?, is_poisonous = ?, size = ?, family_id = ? "  +
 				"WHERE plant_id = ?"
 			);
 			statement.setString(1, plant.getName());
-			statement.setInt(2, plant.getId());
+			statement.setFloat(2, plant.getTemperature());
+			statement.setString(3, plant.getLight());
+			if (plant.getIsPoisonous()) {
+				statement.setString(4, "y");
+			} else {
+				statement.setString(4, "n");
+			}
+			statement.setFloat(5, plant.getSize());
+			statement.setInt(6, plant.getPlantFamily().getId());
+			statement.setInt(7, plant.getId());
 			statement.executeUpdate();
 		} catch (SQLException exception) {
 			exception.printStackTrace();

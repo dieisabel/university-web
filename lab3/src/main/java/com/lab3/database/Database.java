@@ -8,11 +8,16 @@ import java.sql.SQLException;
 import java.sql.DriverManager;
 import java.sql.Connection;
 
+import com.lab3.Config;
+
 public class Database {
-	private static String CONNECTION_STRING = "jdbc:mariadb://localhost:3306/lab3?user=lab3&password=123";
+	private static String CONNECTION_STRING = Config.CONNECTION_STRING;
 
 	public static Connection createConnection() {
 		try {
+			// Tomcat unregister it later
+			DriverManager.registerDriver(new org.mariadb.jdbc.Driver());
+			
 			return DriverManager.getConnection(Database.CONNECTION_STRING);
 		} catch (SQLException exception) {
 			exception.printStackTrace();

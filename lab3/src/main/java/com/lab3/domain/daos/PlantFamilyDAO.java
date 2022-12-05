@@ -83,9 +83,8 @@ public class PlantFamilyDAO {
 			statement.executeUpdate();
 			result = statement.getGeneratedKeys();
 			if (result.next()) {
-				family = Optional.of(
-					new PlantFamily(result.getInt(1), plantFamily.getName())
-				);
+				plantFamily.setId(result.getInt(1));
+				family = Optional.of(plantFamily);
 			}
 		} catch (SQLException exception) {
 			exception.printStackTrace();
