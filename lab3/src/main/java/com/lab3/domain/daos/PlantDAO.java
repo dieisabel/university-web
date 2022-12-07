@@ -86,15 +86,15 @@ public class PlantDAO {
 				Statement.RETURN_GENERATED_KEYS
 			);
 			statement.setString(1, plant.getName());
-			statement.setFloat(2, plant.getTemperature());
+			statement.setDouble(2, plant.getTemperature());
 			statement.setString(3, plant.getLight());
 			if (plant.getIsPoisonous()) {
 				statement.setString(4, "y");
 			} else {
 				statement.setString(4, "n");
 			}
-			statement.setFloat(5, plant.getSize());
-			statement.setInt(6, plant.getPlantFamily().getId());
+			statement.setDouble(5, plant.getSize());
+			statement.setInt(6, plant.getFamily().getId());
 			statement.executeUpdate();
 			result = statement.getGeneratedKeys();
 			if (result.next()) {
@@ -123,15 +123,15 @@ public class PlantDAO {
 				"WHERE plant_id = ?"
 			);
 			statement.setString(1, plant.getName());
-			statement.setFloat(2, plant.getTemperature());
+			statement.setDouble(2, plant.getTemperature());
 			statement.setString(3, plant.getLight());
 			if (plant.getIsPoisonous()) {
 				statement.setString(4, "y");
 			} else {
 				statement.setString(4, "n");
 			}
-			statement.setFloat(5, plant.getSize());
-			statement.setInt(6, plant.getPlantFamily().getId());
+			statement.setDouble(5, plant.getSize());
+			statement.setInt(6, plant.getFamily().getId());
 			statement.setInt(7, plant.getId());
 			statement.executeUpdate();
 		} catch (SQLException exception) {
@@ -163,20 +163,20 @@ public class PlantDAO {
 	private Plant createPlant(ResultSet result) throws SQLException {
 		int id = Integer.parseInt(result.getString("p.plant_id"));
 		String name = result.getString("p.name");
-		float temperature = result.getFloat("p.temperature");
+		double temperature = Double.valueOf(result.getString("p.temperature"));
 		String light = result.getString("p.light");
 		String p = result.getString("p.is_poisonous");
-		boolean is_poisonous;
+		boolean isPoisonous;
 		if (p == "y") {
-			is_poisonous = true;
+			isPoisonous = true;
 		} else {
-			is_poisonous = false;
+			isPoisonous = false;
 		}
-		float size = result.getFloat("p.size");
+		double size = Double.valueOf(result.getString("p.size"));
 		PlantFamily family = new PlantFamily(
 			result.getInt("f.family_id"),
 			result.getString("f.name")
 		);
-		return new Plant(id, name, temperature, light, is_poisonous, size, family);
+		return new Plant(id, name, temperature, light, isPoisonous, size, family);
 	}
 }

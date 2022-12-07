@@ -3,27 +3,27 @@ package com.lab3.domain.models;
 public class Plant {
 	private int id;
 	private String name;
-	private float temperature;
+	private double temperature;
 	private String light;
-	private boolean is_poisonous;
-	private float size;
+	private boolean isPoisonous;
+	private double size;
 	public PlantFamily family;
 
-	public Plant(String name, float temperature, String light, boolean is_poisonous, float size, PlantFamily family) {
+	public Plant(String name, double temperature, String light, boolean isPoisonous, double size, PlantFamily family) {
 	    this.name = name;	
 	    this.temperature = temperature;
 	    this.light = light;
-	    this.is_poisonous = is_poisonous;
+	    this.isPoisonous = isPoisonous;
 	    this.size = size;
 	    this.family = family;
 	}
 
-	public Plant(int id, String name, float temperature, String light, boolean is_poisonous, float size, PlantFamily family) {
+	public Plant(int id, String name, double temperature, String light, boolean isPoisonous, double size, PlantFamily family) {
 		this.id = id;
 	    this.name = name;	
 	    this.temperature = temperature;
 	    this.light = light;
-	    this.is_poisonous = is_poisonous;
+	    this.isPoisonous = isPoisonous;
 	    this.size = size;
 	    this.family = family;
 	}
@@ -44,15 +44,15 @@ public class Plant {
 	    return name;	
 	}
 
-	public void setTemperature(float temperature) {
+	public void setTemperature(double temperature) {
 		this.temperature = temperature;
 	}
 	
-	public float getTemperature() {
+	public double getTemperature() {
 	    return temperature;	
 	}
 	
-	public void setLight(String ligth) {
+	public void setLight(String light) {
 		this.light = light;
 	}
 	
@@ -60,27 +60,27 @@ public class Plant {
 	    return light;	
 	}
 	
-	public void setIsPoisonous(boolean is_poisonous) {
-	    this.is_poisonous = is_poisonous;	
+	public void setIsPoisonous(boolean isPoisonous) {
+	    this.isPoisonous = isPoisonous;	
 	}
 	
 	public boolean getIsPoisonous() {
-		return is_poisonous;
+		return isPoisonous;
 	}
 	
-	public void setSize(float size) {
+	public void setSize(double size) {
 		this.size = size;
 	}
 	
-	public float getSize() {
+	public double getSize() {
 		return size;
 	}
 	
-	public void setPlantFamily(PlantFamily family) {
+	public void setFamily(PlantFamily family) {
 		this.family = family;
 	}
 	
-	public PlantFamily getPlantFamily() {
+	public PlantFamily getFamily() {
 	    return family;	
 	}
 }
